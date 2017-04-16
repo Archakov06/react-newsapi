@@ -66,6 +66,7 @@ export default class App extends Component {
   }
 
   handleChange = (e, { value }) => {
+    this.setState({ articles: [] });
     this.setState({ source: value }, this.getArticles);
   };
 
