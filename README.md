@@ -1,3 +1,3 @@
 # React NewsAPI Example
 
-![](https://archakov.im/uploads/react-newsapi.gif)
+![](https://archakov.im/uploads/react-newsapi.gif?1)
