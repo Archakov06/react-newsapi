@@ -94,16 +94,19 @@ export default class App extends Component {
             defaultValue={friendOptions[0].value}
           />
         </div>
-        {
-          this.state.articles.length ? this.state.articles.map((item, index)=>{
-            return <Article
-              key={index}
-              title={item.title}
-              text={item.description}
-              image={item.urlToImage}
-            />
-          }) : <Article />
-        }
+        <div className="articles">
+          {
+            this.state.articles.length ? this.state.articles.map((item, index)=>{
+              return <Article
+                key={index}
+                title={item.title}
+                text={item.description}
+                url={item.url}
+                image={item.urlToImage ? item.urlToImage : 'http://placehold.it/250'}
+              />
+            }) : <Article />
+          }
+        </div>
       </div>
 
     );
